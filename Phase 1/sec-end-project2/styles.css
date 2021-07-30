@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: rgb(37, 91, 99);
+    text-align: center;
+  }
+  h2 {
+    color: rgb(64, 141, 153);
+    text-align: center;
+  }
+  h3 {
+    color: rgb(86, 194, 211);
+    text-align: center;
+  }
+  h4 {
+    color: rgb(90, 221, 241);
+    text-align: center;
+  }
+  h5 {
+    color: rgb(57, 229, 255);
+    text-align: center;
+  }
+  h6 {
+    color: rgb(4, 220, 253);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  div {
+    color: rgb(14, 15, 15);
+    background-color: 009900;
+    margin: 2px;
+    font-size: 25px;
+  }
+  .header {
+    display: block;
+    border-style: groove;
+    border-color: rgb(211, 119, 77);
+    text-align: center;
+    padding: 0% 5%;
+    margin-bottom: 0.25%;
+  }
+  .footer{
+    display: block;
+    border-style: groove;
+    border-color: rgb(211, 119, 77);
+    text-align: center;
+    padding: 0% 5%;
+  }
+  .main{
+    display: block;
+    border-style: groove;
+    border-color: rgb(211, 119, 77);
+    text-align: center;
+    margin-bottom: 0.25%;
+    padding: 2% 10%
+    
+  }
