@@ -1,0 +1,23 @@
+h1{
+    color: #035397;
+    text-align: center;
+    width: 50%;
+    border: 3px solid navy;
+    padding: 10px 10px ;
+    margin-left: 260px;
+    margin-top: 10px;
+    text-shadow: 0 1px 0 white;
+}
+body{
+    background-color: #F3F2C9;
+}
+
+.card-text, .card-title, .text-muted{
+    color: aliceblue;
+}
+.card-body{
+    background-color: rgb(106, 155, 155);
+}
+#main{
+    box-shadow: 10px 10px 30px #292929;
+}
