@@ -1,7 +1,14 @@
-var total = [];
+var total=[];
+var tempArr = [];
 
 function storeData() {
-
+    const localStg = localStorage.getItem("entryObj");
+    if(localStg === null){
+        total = [];
+    }else{
+        tempArr = JSON.parse(localStg);
+    }
+    
     var client = document.getElementById("client").value;
     var project = document.getElementById("project").value;
     var budget = document.getElementById("budget").value;
@@ -10,10 +17,25 @@ function storeData() {
     total.push(entry);
 
     localStorage.setItem("entryObj",JSON.stringify(total));
+    total.push.apply(total, tempArr);
 
     console.log("Data store in session and local storage");
+   
     
 }
+// function enter(){
+//     var client = document.getElementById("client").value;
+//     var project = document.getElementById("project").value;
+//     var budget = document.getElementById("budget").value;
+    
+//     var entry = {name:client, pro:project, cost:budget};
+//     tempArr.push(entry);
+
+//     localStorage.setItem("entryObj",JSON.stringify(tempArr));
+//     total.push.apply(total, tempArr);
+
+//     console.log("Data store in session and local storage");
+// }
 
 
 function displayData() {
