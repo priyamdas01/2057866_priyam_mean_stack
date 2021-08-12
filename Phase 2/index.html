@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="stylesheet" href="styles.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Shopping Cart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Everything that you want....
+            </span>
+        </div>
+    </nav>
+    <h1>Shopping Cart</h1><br>
+    <label style="display: inline;">Cart Size: </label>
+    <p style="display: inline;" id="cart">0</p><br>
+    <a href="./checkout_page.html">Checkout</a>
+    <br>
+    <form>
+        <div class="card-deck">
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name1">Orange</name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price1">25</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData1()">
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name2">Banana</name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price2">10</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData2()">
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name3">Mango</name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price3">40</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData3()">
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name4">Watermelon </name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price4">20</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData4()">
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name5">Grapes </name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price5">100</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData5()">
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <label class="card-title">Name: </label>
+                    <name id="name6">Apple </name><br>
+                    <label>Price: </label>
+                    <name class="card-text" id="price6">55</name>
+                </div>
+                <div class="card-footer">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                    <input type="submit" value="Add" onclick="showCart(); storeData6()">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <script src='script.js'></script>
+</body>
+
+</html>
