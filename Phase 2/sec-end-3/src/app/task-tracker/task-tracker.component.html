@@ -1,0 +1,58 @@
+<div>
+  <h1 [ngClass]="'heading'">Task Tracker ✍ </h1>
+  <mat-grid-list cols="2" rowHeight aria-rowspan="" style="color: rgb(75, 74, 100);">
+    <mat-grid-tile>
+      <form [formGroup]="taskInfo" (ngSubmit)="enterTask()">
+        <h2><u>To-do Tasks</u></h2>
+        <mat-form-field>
+          <mat-label>ID: </mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field><br>
+        <mat-form-field>
+          <mat-label>Name: </mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field><br>
+        <mat-form-field>
+          <mat-label>Task: </mat-label>
+          <input matInput formControlName="task">
+        </mat-form-field><br>
+        <mat-form-field appearance="fill" class="example-full-width">
+          <mat-label>Deadline: </mat-label>
+          <input matInput formControlName="deadline">
+          <mat-datepicker-toggle matSuffix></mat-datepicker-toggle>
+
+        </mat-form-field><br>
+        <button type="submit" mat-raised-button
+          style="color: blue;background-color: bisque; margin-right: 1in;">Submit</button>
+        <button type="reset" mat-raised-button
+          style="color: rgb(190, 248, 29);background-color: rgb(107, 106, 104);">Reset</button>
+      </form>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <!-- <table border="1" style="background-color: rgb(68, 68, 68); color: rgb(198, 200, 202);">
+        <ng-container>
+          <th> Emp ID. </th>
+          <td></td>
+
+        </ng-container>
+      </table> -->
+
+      <table border="1" style="background-color: rgb(68, 68, 68); color: rgb(198, 200, 202);">
+        <h2 style="text-align: end;"><u>To-do List</u></h2><br>
+        <tr *ngIf="f1">
+          <th>Emp Id.</th>
+          <th>Name</th>
+          <th>Task</th>
+          <th>Deadline</th>
+        </tr>
+        <tr *ngFor="let tdata of tasks">
+          <td>{{tdata.id}}</td>
+          <td>{{tdata.name}}</td>
+          <td>{{tdata.task}}</td>
+          <td>{{tdata.deadline}}</td>
+        </tr>
+      </table>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
