@@ -1,0 +1,18 @@
+<div [ngClass]="'body'">
+  <form [formGroup]="eachQ" (ngSubmit)="submitMcq()">
+    <div *ngFor="let que of quest">
+      <p>{{que.q}}</p> <input type="radio" formControlName={{que.q}} ngModel value={{que.a1}} required><span
+        id="{{que.a1}}">{{que.a1}}</span> <br>
+      <input type="radio" formControlName={{que.q}} ngModel value={{que.a2}} required><span
+        id="{{que.a2}}">{{que.a2}}</span> <br>
+      <input type="radio" formControlName={{que.q}} ngModel value={{que.a3}} required><span
+        id="{{que.a3}}">{{que.a3}}</span> <br>
+      <input type="radio" formControlName={{que.q}} ngModel value={{que.a4}} required><span
+        id="{{que.a4}}">{{que.a4}}</span> <br>
+    </div>
+    <br><br>
+    <input type="submit" value="Submit" [disabled]="eachQ.invalid || done">
+  </form>
+  <span id="result"></span><br>
+  <span id="score"></span>
+</div>

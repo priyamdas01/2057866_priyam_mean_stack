@@ -1,0 +1,13 @@
+[
+  {"q": "1) Which of the following statement is correct for AngularJS?", "a1": "AngularJS is an HTML framework", "a2": "AngularJS is a Java framework", "a3":"AngularJS is a JavaScript framework", "a4":"AngularJS is a SQL framework","correctA":"AngularJS is a JavaScript framework"},
+  {"q": "2) On which of the Architectural pattern AngularJS is based?", "a1": "Observer Pattern", "a2": "Decorator pattern", "a3":"MVC Architecture pattern", "a4":"MVVM Architectural pattern","correctA":"MVVM Architectural pattern"},
+  {"q": "3) AngularJS is perfect for?", "a1":"DPAs", "a2":"CPAs", "a3":"SPAs", "a4": "MPAs", "correctA":"SPAs"},
+  {"q": "4) Which of the following is the correct syntax for writing AngularJS expressions?", "a1":"(expression)", "a2":"{{expression}}", "a3":"{{{expression}}}", "a4":"[expression]", "correctA":"{{expression}}"},
+  {"q": "5) Which of the following directive is used to bind the application data to the HTML view in AngularJS?", "a1":"ng-app directive", "a2":"ng-model directive", "a3":"ng-bind directive", "a4":"ng-init directive", "correctA":"ng-bind directive"},
+  {"q": "6) Which of the following syntax is correct for applying multiple filters in AngularJS?", "a1":"{{ expression | filter1 | filter2 | ... }}", "a2":"{{ expression | {filter1} | {filter2} | ... }}", "a3":"{{ expression - {filter1} - {filter2} - ... }}", "a4":"{{ {filter1} | {filter2} | ...-expression}}", "correctA":"{{ expression | filter1 | filter2 | ... }}"},
+  {"q": "7) Which of the following statement is true about the lowercase filter?", "a1":"The lowercase filter converts a text to lower case text.", "a2":"The lowercase filter is a function that takes text as input.", "a3":"Both of the above", "a4":"None of the above.", "correctA":"The lowercase filter converts a text to lower case text."},
+  {"q": "8) Which of the following is an advantage of AngularJS?", "a1":"AngularJS code is unit testable.", "a2":"AngularJS provides reusable components.", "a3":"AngularJS uses dependency injection and makes use of separation of concerns.", "a4":"All of the above", "correctA":"All of the above"},
+  {"q": "9) Which of the following statement is true about $dirty flag?", "a1":"$dirty flag is used to state that value has been changed.", "a2":"$dirty flag is used to state that the form has invalid data.", "a3":"Both of the above", "a4":"None of the above", "correctA":"$dirty flag is used to state that value has been changed."},
+  {"q": "10) What will be the output for the following code?", "a1":"The output is 1", "a2":"The output is 15", "a3":"The output is 19", "a4":"The output is 2", "correctA":"The output is 19"}
+
+]
