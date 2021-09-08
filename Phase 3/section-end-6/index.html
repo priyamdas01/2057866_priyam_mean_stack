@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatlog</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let socket = io();
+
+        function send() {
+            let timestamp = new Date();
+            socket.emit("name", document.getElementById("name").value);
+            socket.emit("message", document.getElementById("message").value);
+            socket.emit("time", timestamp.toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            }));
+            document.querySelector("div").innerHTML = "sent";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Chatlog</h1>
+    <form>
+        <label><b>Name: </b></label><input type="text" id="name" name="name"><br>
+        <label><b>Message: </b></label><textarea name="message" id="message"></textarea>
+        <br><br>
+        <button onclick="send()">Send</button>
+        <input type="reset">
+    </form>
+    <div>
+
+    </div>
+</body>
