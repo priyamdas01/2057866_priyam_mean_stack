@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <script>
+        const getData = () => {
+            const formData = {};
+            document.querySelectorAll('input').forEach(input => {
+                formData[input.name] = input.value;
+            });
+            return formData;
+        }
+
+        const addCourse = async () => {
+            await fetch('/api/course/add', {
+                method: 'POST',
+                body: JSON.stringify(getData()),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            document.querySelector(".under").innerHTML = "<h1>you have saved the course successfully</h1>"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Add Course</h1>
+    <form>
+        <label>Course ID: </label>
+        <input type="text" name="_id" required><br>
+        <label>Name: </label>
+        <input type="text" name="cname" required><br>
+        <label>Description: </label>
+        <input type="text" name="desc" required><br>
+        <label>Amount: </label>
+        <input type="text" name="cost" required><br>
+        <button type="button" onclick="addCourse()">Add</button>
+        <button type="reset">Reset</button><br>
+        <a href="/index_2.html">Go Back</a>
+    </form>
+    <div class="under">
+
+    </div>
+</body>
+
+</html>
